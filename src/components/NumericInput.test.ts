@@ -6,7 +6,10 @@ import { Props as NumericInputProps } from '@/types/NumericInputTypes';
 describe('NumericInput', () => {
     const setup = (initProps: Partial<NumericInputProps> = {}) => {
         const wrapper = mount(NumericInput, {
-            propsData: initProps,
+            propsData: {
+                modelValue: null,
+                ...initProps,
+            },
         });
 
         return wrapper;
