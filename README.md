@@ -42,4 +42,10 @@ npm run lint
 ```
 
 ### Customize configuration
+Customize the app with config.ts settings.
+| Config key               | Description                                                                                        | Values            |
+| -------------            | -------------------------------------------------------------------------------------------------- |-------------------|
+| CurrencySymbol           | You can set a custom currency symbol. Leave it empty if you don't want to use a currency symbol.   | '', '€', '$', etc |
+| ClearDiscountIfDisabled  | Clear the current discount input value when disabling the discount usage. Default value is false.  | true, false       |
+
 See [Configuration Reference](https://cli.vuejs.org/config/).
